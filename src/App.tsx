@@ -74,7 +74,7 @@ const App: React.FC = () => {
         placeholder="Add New Todo"
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
-        onKeyPress={handleKeyPress}
+        onKeyDown={handleKeyPress}
       />
       <ul>
         {todosList.map((toDo) => (
